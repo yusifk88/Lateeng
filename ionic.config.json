@@ -1,0 +1,7 @@
+{
+  "name": "lateeng_mobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
