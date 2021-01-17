@@ -73,7 +73,7 @@
                             </p>
                         </ion-col>
                         <ion-col>
-                            <ion-button href="/register" @click="register()" expand="block" size="large" shape="round" color="tertiary">Get Started</ion-button>
+                            <ion-button @click="() => $router.push('/register')" expand="block" size="large" shape="round" color="tertiary">Get Started</ion-button>
 
                         </ion-col>
 
@@ -97,7 +97,8 @@ export default {
         IonRow,
         IonCol,
         IonPage,
-        IonContent
+        IonContent,
+
     },
      
      computed:{

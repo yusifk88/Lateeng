@@ -6,7 +6,7 @@
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
-      
+
     </ion-content>
   </ion-page>
 </template>
@@ -29,20 +29,14 @@ export default  {
    methods:{
 
 
-     async GetStarted(){
-      const starter = await modalController.create({
-      component:StarterComponent,
-      backdropDismiss:false
-
-    });
-    return starter.present();
-
-      }
 
   },
   mounted(){
-    this.GetStarted();
-  
+
+    this.$router.push({
+      path:"/starter"
+    })
+
   }
 }
 </script>

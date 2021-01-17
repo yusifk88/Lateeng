@@ -64,7 +64,7 @@
                     <ion-col size="12">
                         <ion-button color="tertiary" size="large" shape="round" expand="block">Register Now</ion-button>
                         <p>
-                          Already have an account ? <ion-button color="tertiary">Log In</ion-button>
+                          Already have an account ? <a href="#" color="tertiary">Log In</a>
                         </p>
                     </ion-col>
                 </ion-row>
