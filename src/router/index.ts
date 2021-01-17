@@ -8,25 +8,35 @@ const routes: Array<RouteRecordRaw> = [
     redirect: '/tabs/tab1'
   },
   {
+    path:'/register',
+    component: () => import('@/views/Register.vue')
+
+  },
+  {
     path: '/tabs/',
     component: Tabs,
     children: [
       {
         path: '',
-        redirect: '/tabs/tab1'
+        redirect: '/tabs/goals'
       },
       {
-        path: 'tab1',
-        component: () => import('@/views/Tab1.vue')
+        path: 'goals',
+        component: () => import('@/views/GoalsComponent.vue')
       },
       {
-        path: 'tab2',
-        component: () => import('@/views/Tab2.vue')
+        path: 'search',
+        component: () => import('@/views/SearchComponent.vue')
       },
       {
-        path: 'tab3',
-        component: () => import('@/views/Tab3.vue')
+        path: 'explore',
+        component: () => import('@/views/ExploreComponent.vue')
+      },
+      {
+        path: 'notifications',
+        component: () => import('@/views/NotificationsComponent.vue')
       }
+
     ]
   }
 ]
